@@ -295,6 +295,32 @@ header {
   z-index: 2;
 }
 
+/* Tarifs decoration */
+.tarifs-deco {
+  position: absolute;
+  left: -10px;
+  top: 4px;
+  transform: rotate(-12deg) scale(1.0);
+  max-width: 140px;
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Footer decoration */
+footer {
+  position: relative;
+}
+.footer-deco {
+  position: absolute;
+  right: 12px;
+  bottom: 6px;
+  max-width: 120px;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .vision {
   background: var(--cream2);
 }
