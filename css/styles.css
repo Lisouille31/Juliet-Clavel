@@ -335,10 +335,17 @@ header {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(155, 127, 199, 0.15);
+  background: transparent;
   display: grid;
   place-items: center;
   margin-bottom: 14px;
+}
+
+.pq-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 .pq-card p {
