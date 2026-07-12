@@ -336,6 +336,10 @@ footer {
   position: relative;
 }
 
+.vision-illustration {
+  isolation: isolate;
+}
+
 .vision-deco {
   position: absolute;
   top: -18px;
@@ -360,6 +364,7 @@ footer {
   display: block;
   margin: 0 auto;
   z-index: 0;
+  mix-blend-mode: multiply;
 }
 
 .vision-text p {
