@@ -349,6 +349,15 @@ footer {
   z-index: 0;
 }
 
+.illustration-large {
+  max-width: 420px;
+  width: 100%;
+  transform: translateY(-6px) rotate(-4deg);
+  box-shadow: 0 12px 30px rgba(60,50,40,0.06);
+  border-radius: 10px;
+  z-index: 0;
+}
+
 .vision-text p {
   color: var(--ink-s);
   font-size: 0.96rem;
