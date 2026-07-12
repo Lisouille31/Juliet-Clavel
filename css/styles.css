@@ -192,14 +192,20 @@ header {
 }
 
 .hero-img-top-right {
+  position: absolute;
   top: -6px;
   left: 12px;
+  right: auto;
+  bottom: auto;
   transform: scale(1.08);
 }
 
 .hero-img-bottom-left {
+  position: absolute;
   bottom: -10px;
   right: 0;
+  top: auto;
+  left: auto;
   max-width: 260px;
 }
 
@@ -697,6 +703,148 @@ footer {
 
 .ft-links a:hover {
   color: #fff;
+}
+
+@media (max-width: 860px) {
+  .wrap {
+    width: min(100%, calc(100% - 32px));
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    min-height: 70vh;
+    padding: 60px 0 40px;
+  }
+
+  .hero-img-top-right,
+  .hero-img-bottom-left {
+    max-width: 180px;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 10vw, 5rem);
+  }
+
+  .hero-sub {
+    padding: 6px 22px;
+    font-size: 0.92rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+    max-width: 420px;
+  }
+
+  .vision-inner,
+  .tarifs-top,
+  .parcours-inner,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pq-card {
+    padding: 24px 18px;
+  }
+
+  .tarifs-top {
+    align-items: stretch;
+  }
+
+  .illustration-small {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  th,
+  td {
+    padding: 14px 16px;
+  }
+
+  .c-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rdv-box {
+    padding: 26px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-nav {
+    padding: 12px 0;
+  }
+
+  .nav-name {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 50px 0 36px;
+  }
+
+  .hero-background img {
+    display: none;
+  }
+
+  .hero-sub {
+    padding: 6px 18px;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .vision-quote {
+    padding: 18px 18px;
+  }
+
+  .pq-card {
+    padding: 20px 16px;
+  }
+
+  .contact-grid {
+    gap: 30px;
+  }
+
+  .field {
+    gap: 8px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 12px 14px;
+  }
+
+  .or-divider {
+    gap: 10px;
+  }
+
+  .big-tel {
+    font-size: 1.8rem;
+  }
 }
 
 .footer-bottom {
