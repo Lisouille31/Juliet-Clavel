@@ -357,7 +357,7 @@ footer {
   max-width: 520px;
   width: 100%;
   transform: none;
-  box-shadow: 0 18px 38px rgba(60,50,40,0.08);
+  box-shadow: none;
   border-radius: 12px;
   background: transparent;
   padding: 0;
