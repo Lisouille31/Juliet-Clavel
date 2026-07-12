@@ -332,6 +332,23 @@ footer {
   align-items: center;
 }
 
+.vision-illustration {
+  position: relative;
+}
+
+.vision-deco {
+  position: absolute;
+  top: -18px;
+  right: -12px;
+  max-width: 110px;
+  transform: rotate(-12deg) scale(0.92);
+  opacity: 0.9;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  filter: saturate(0.95) contrast(0.95);
+  z-index: 0;
+}
+
 .vision-text p {
   color: var(--ink-s);
   font-size: 0.96rem;
