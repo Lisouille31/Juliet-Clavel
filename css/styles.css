@@ -339,13 +339,14 @@ header {
   display: grid;
   place-items: center;
   margin-bottom: 14px;
+  border: 1px solid var(--mauve-l);
 }
 
-.pq-icon img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  display: block;
+.pq-num {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--mauve-d);
+  line-height: 1;
 }
 
 .pq-card p {
