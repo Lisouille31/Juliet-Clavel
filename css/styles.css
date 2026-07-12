@@ -350,11 +350,15 @@ footer {
 }
 
 .illustration-large {
-  max-width: 420px;
+  max-width: 520px;
   width: 100%;
-  transform: translateY(-6px) rotate(-4deg);
-  box-shadow: 0 12px 30px rgba(60,50,40,0.06);
-  border-radius: 10px;
+  transform: none;
+  box-shadow: 0 18px 38px rgba(60,50,40,0.08);
+  border-radius: 12px;
+  background: var(--cream);
+  padding: 18px;
+  display: block;
+  margin: 0 auto;
   z-index: 0;
 }
 
