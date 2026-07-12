@@ -263,6 +263,38 @@ header {
   padding: 88px 0;
 }
 
+.section.contact {
+  position: relative;
+  overflow: visible;
+}
+
+.contact-deco {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.92;
+  z-index: 1;
+  will-change: transform;
+}
+
+.contact-deco.deco-top-right {
+  top: 8px;
+  right: 18px;
+  transform: rotate(-16deg) scale(0.95);
+  max-width: 160px;
+}
+
+.contact-deco.deco-bottom-left {
+  bottom: -8px;
+  left: 12px;
+  transform: rotate(10deg) scale(1.05);
+  max-width: 220px;
+}
+
+.rdv-box {
+  position: relative;
+  z-index: 2;
+}
+
 .vision {
   background: var(--cream2);
 }
