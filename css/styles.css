@@ -84,6 +84,10 @@ img {
   padding: 14px 32px;
 }
 
+header .btn-primary {
+  margin-left: auto;
+}
+
 .btn-full {
   width: 100%;
 }
@@ -876,6 +880,7 @@ footer {
 
   .tarifs-top {
     align-items: stretch;
+    flex-direction: row;
   }
 
   .illustration-small {
@@ -901,15 +906,22 @@ footer {
 
 @media (max-width: 640px) {
   .site-nav {
-    padding: 12px 0;
+    padding: 10px 0;
+    gap: 8px;
   }
 
   .nav-name {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .nav-links {
-    gap: 12px;
+    display: none;
+  }
+
+  header .btn-primary {
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    margin-left: auto;
   }
 
   .hero {
@@ -930,8 +942,8 @@ footer {
 
   .hero-img-bottom-left {
     bottom: -6px;
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
     max-width: 150px;
   }
 
@@ -945,15 +957,20 @@ footer {
   }
 
   .section {
-    padding: 64px 0;
+    padding: 48px 0;
+  }
+
+  .pourquoi-grid {
+    grid-template-columns: 1fr;
   }
 
   .vision-quote {
-    padding: 18px 18px;
+    padding: 16px 16px;
+    font-size: 1.2rem;
   }
 
   .vision-inner {
-    gap: 30px;
+    gap: 24px;
   }
 
   .vision-text {
@@ -968,42 +985,76 @@ footer {
   }
 
   .illustration-large {
-    max-width: 280px;
+    max-width: 320px;
     margin: 0 auto;
   }
 
+  .illustration {
+    max-width: 240px;
+  }
+
+  .tarifs-top {
+    position: relative;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
   .tarifs-deco {
-    left: 6px;
-    top: 0;
-    max-width: 100px;
-    transform: rotate(-8deg) scale(0.85);
+    position: static;
+    transform: none;
+    max-width: 160px;
+    margin: 0 auto 16px;
+    opacity: 1;
   }
 
-  .footer-deco {
-    right: 8px;
-    bottom: 8px;
-    max-width: 90px;
+  .illustration-small {
+    max-width: 220px;
+    margin: 0 auto;
+    width: auto;
+    flex-shrink: 1;
   }
 
-  .contact-deco.deco-top-right {
-    top: 6px;
-    right: 8px;
-    max-width: 110px;
+  .parcours-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
-  .contact-deco.deco-bottom-left {
-    bottom: -12px;
-    left: 4px;
-    max-width: 140px;
-  }
-
-  .pq-card {
+  .aside-box {
     padding: 20px 16px;
+    text-align: left;
   }
 
   .contact-grid {
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    position: relative;
   }
+
+  .contact-deco {
+    position: static;
+    max-width: 150px;
+    margin-bottom: 16px;
+    opacity: 1;
+  }
+
+  .contact-deco.deco-top-right {
+    order: -1;
+    margin-bottom: 16px;
+  }
+
+  .contact-deco.deco-bottom-left {
+    margin-bottom: 16px;
+  }
+
+  .footer-deco {
+    position: static;
+    max-width: 100px;
+    margin-bottom: 16px;
+    opacity: 1;
+  }
+
+
 
   .field {
     gap: 8px;
