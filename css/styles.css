@@ -113,6 +113,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex: 0 0 auto;
 }
 
 .nav-logo-link {
@@ -458,6 +459,7 @@ footer {
 .tarifs {
   background: var(--cream2);
   position: relative;
+  overflow: visible;
 }
 
 .tarifs-top {
@@ -921,7 +923,15 @@ footer {
   header .btn-primary {
     padding: 8px 14px;
     font-size: 0.75rem;
-    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+
+  .nav-brand {
+    flex: 1;
   }
 
   .hero {
@@ -941,9 +951,9 @@ footer {
   }
 
   .hero-img-bottom-left {
-    bottom: -6px;
-    right: auto;
-    left: 0;
+    bottom: -30px;
+    right: 0;
+    left: auto;
     max-width: 150px;
   }
 
@@ -996,22 +1006,31 @@ footer {
   .tarifs-top {
     position: relative;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
     margin-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .tarifs-top > div:first-of-type {
+    order: 1;
   }
 
   .tarifs-deco {
-    position: static;
-    transform: none;
-    max-width: 160px;
-    margin: 0 auto 16px;
-    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    transform: rotate(-12deg) scale(0.9);
+    max-width: 140px;
+    margin: 0;
+    opacity: 0.95;
+    z-index: 2;
   }
 
   .illustration-small {
-    max-width: 220px;
-    margin: 0 auto;
+    order: 3;
     width: auto;
+    max-width: 200px;
+    margin: 20px auto 0;
     flex-shrink: 1;
   }
 
@@ -1027,34 +1046,46 @@ footer {
 
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
     position: relative;
   }
 
+  .contact-grid > div:first-child {
+    order: 1;
+  }
+
   .contact-deco {
-    position: static;
-    max-width: 150px;
-    margin-bottom: 16px;
-    opacity: 1;
+    position: absolute;
+    opacity: 0.9;
+    pointer-events: none;
   }
 
   .contact-deco.deco-top-right {
-    order: -1;
-    margin-bottom: 16px;
+    top: -20px;
+    right: 0;
+    transform: rotate(-16deg) scale(0.9);
+    max-width: 130px;
+    order: unset;
+    margin: 0;
   }
 
   .contact-deco.deco-bottom-left {
-    margin-bottom: 16px;
+    bottom: -40px;
+    left: 0;
+    transform: rotate(10deg) scale(0.95);
+    max-width: 150px;
+    order: unset;
+    margin: 0;
   }
+
+
 
   .footer-deco {
     position: static;
-    max-width: 100px;
-    margin-bottom: 16px;
-    opacity: 1;
+    max-width: 120px;
+    margin: 20px auto 0;
+    opacity: 0.95;
   }
-
-
 
   .field {
     gap: 8px;
