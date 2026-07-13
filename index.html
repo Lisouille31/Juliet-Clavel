@@ -6,26 +6,29 @@
   <meta name="description" content="Juliet Clavel, diététicienne-nutritionniste à Saint-Jean (31). Accompagnement personnalisé pour retrouver un équilibre alimentaire et des habitudes durables.">
   <meta name="keywords" content="Juliet Clavel, diététicienne nutritionniste Saint-Jean, nutrition Saint-Jean, accompagnement nutrition, équilibre alimentaire, diététique 31">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Juliet Clavel — Diététicienne-Nutritionniste à Saint-Jean (31)">
+  <meta property="og:title" content="Juliet Clavel | Diététicienne-Nutritionniste à Saint-Jean (31)">
   <meta property="og:description" content="Accompagnement nutritionnel personnalisé à Saint-Jean pour retrouver équilibre, confiance et habitudes durables.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <link rel="canonical" href="/">
   <link rel="icon" href="images/logo.png" type="image/png">
-  <title>Juliet Clavel — Diététicienne-Nutritionniste · Saint-Jean (31)</title>
+  <title>Juliet Clavel | Diététicienne-Nutritionniste · Saint-Jean (31)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Juliet Clavel - Diététicienne Nutritionniste",
+    "name": "Juliet Clavel, Diététicienne Nutritionniste",
     "description": "Cabinet de diététique et nutrition à Saint-Jean (31). Accompagnement personnalisé pour retrouver un équilibre alimentaire et des habitudes durables.",
     "telephone": "07 43 76 50 40",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9 Avenue de Lapeyrière",
       "addressLocality": "Saint-Jean",
-      "postalCode": "31420",
+      "postalCode": "31240",
       "addressCountry": "FR"
     },
     "areaServed": "Saint-Jean (31)"
@@ -33,16 +36,17 @@
   </script>
 </head>
 <body id="top">
+  <script>document.documentElement.classList.add('has-js');</script>
   <header>
     <nav class="site-nav wrap">
       <div class="nav-brand">
         <a href="#top" class="nav-logo-link">
-          <img class="site-logo" src="images/logo.png" alt="Logo Juliet Clavel" width="44" height="44">
+          <img class="site-logo" src="images/logo.png" alt="Logo Juliet Clavel" width="54" height="44">
         </a>
         <span class="nav-name">Juliet Clavel</span>
       </div>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#vision">Vision</a></li>
         <li><a href="#pourquoi">Pourquoi consulter</a></li>
         <li><a href="#tarifs">Tarifs</a></li>
@@ -51,14 +55,18 @@
       </ul>
 
       <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-background">
-        <img class="hero-img hero-img-top-right" src="images/citron.png" alt="" aria-hidden="true">
-        <img class="hero-img hero-img-bottom-left" src="images/olives.png" alt="" aria-hidden="true">
+        <img class="hero-img hero-img-top-right" src="images/citron.png" alt="" aria-hidden="true" data-parallax="0.06">
+        <img class="hero-img hero-img-bottom-right-desktop" src="images/olives.png" alt="" aria-hidden="true">
       </div>
 
       <div class="hero-content wrap">
@@ -68,11 +76,13 @@
         <a href="#contact" class="btn btn-primary btn-large">Prendre rendez-vous</a>
         <p class="hero-tel">Par téléphone au <a href="tel:07 43 76 50 40">07 43 76 50 40</a> ou via le formulaire</p>
       </div>
+
     </section>
 
     <section id="vision" class="section vision">
+      <img class="vision-olive-bridge" src="images/olives.png" alt="" aria-hidden="true">
       <div class="wrap vision-inner">
-        <div class="vision-text">
+        <div class="vision-text reveal">
           <span class="section-label">Ma vision de la nutrition</span>
           <h2>Une alimentation qui s'adapte à vous, pas l'inverse.</h2>
           <p>La nutrition est un véritable outil de santé, qui doit s'adapter à chaque personne, son histoire, ses besoins et son quotidien.</p>
@@ -82,57 +92,64 @@
           <div class="vision-quote">« Chaque parcours est unique, chaque alimentation aussi. »</div>
         </div>
 
-        <div class="vision-illustration">
-          <img src="images/marmite.png" class="illustration illustration-large" alt="Illustration santé">
+        <div class="vision-illustration reveal">
+          <img src="images/marmite.png" class="illustration illustration-large" alt="Illustration d'une marmite entourée de légumes et d'aromates" loading="lazy" decoding="async">
+          <img src="images/corps_sain.png" class="vision-deco" alt="Illustration d'une silhouette sereine, symbole d'équilibre entre corps et esprit" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
 
-    <section id="pourquoi" class="section">
+    <section id="pourquoi" class="section pourquoi-section">
+      <img src="images/framboises.png" class="pourquoi-deco deco-top-left" alt="" aria-hidden="true" loading="lazy" decoding="async">
+
       <div class="wrap">
-        <div class="section-intro">
+        <div class="section-intro reveal">
           <span class="section-label">Pourquoi consulter une diététicienne ?</span>
           <h2>L'alimentation joue un rôle essentiel dans notre santé et notre bien-être au quotidien.</h2>
           <p>Je peux vous accompagner, quelque soit votre âge, pour :</p>
         </div>
 
+        <div class="pourquoi-mobile-visual reveal" aria-hidden="true">
+          <img src="images/corps_sain.png" alt="" loading="lazy" decoding="async">
+        </div>
+
         <div class="pourquoi-grid">
-          <article class="pq-card">
+          <article class="pq-card reveal">
             <div class="pq-icon">
               <span class="pq-num">1</span>
             </div>
             <p>Retrouver un équilibre alimentaire adapté à votre quotidien</p>
           </article>
 
-          <article class="pq-card">
+          <article class="pq-card reveal">
             <div class="pq-icon">
               <span class="pq-num">2</span>
             </div>
             <p>Être soutenu(e) dans une démarche de perte ou de prise de poids</p>
           </article>
 
-          <article class="pq-card">
+          <article class="pq-card reveal">
             <div class="pq-icon">
               <span class="pq-num">3</span>
             </div>
             <p>Adapter votre alimentation à vos besoins spécifiques : fatigue, troubles digestifs, pathologies, changements physiologiques, activité physique…</p>
           </article>
 
-          <article class="pq-card">
+          <article class="pq-card reveal">
             <div class="pq-icon">
               <span class="pq-num">4</span>
             </div>
             <p>Améliorer votre bien-être et votre santé</p>
           </article>
 
-          <article class="pq-card">
+          <article class="pq-card reveal">
             <div class="pq-icon">
               <span class="pq-num">5</span>
             </div>
             <p>Mieux comprendre votre alimentation et faire des choix adaptés</p>
           </article>
 
-          <article class="pq-card">
+          <article class="pq-card reveal">
             <div class="pq-icon">
               <span class="pq-num">6</span>
             </div>
@@ -143,92 +160,104 @@
     </section>
 
     <section id="tarifs" class="section tarifs">
-        <div class="wrap tarifs-top">
-          <img src="images/piment.png" class="tarifs-deco" alt="" aria-hidden="true">
-        <div>
-          <span class="section-label">Tarifs</span>
-          <h2>Des consultations accessibles,<br>à chaque étape.</h2>
+      <div class="wrap tarifs-layout">
+        <div class="tarifs-top">
+          <div class="reveal tarifs-heading">
+            <span class="section-label">Tarifs</span>
+            <h2>Des consultations accessibles,<br>à chaque étape.</h2>
+            <p>Un accompagnement clair et adapté à votre situation, sans engagement inutile.</p>
+          </div>
+          <div class="tarifs-decorations">
+            <img src="images/piment.png" class="tarifs-deco" alt="" aria-hidden="true" loading="lazy" decoding="async">
+            <img src="images/pamplemousse.png" class="illustration-small reveal" alt="Illustration d'un pamplemousse" loading="lazy" decoding="async">
+          </div>
         </div>
 
-        <img src="images/pamplemousse.png" class="illustration-small" alt="Illustration tarifs">
-      </div>
-
-      <div class="wrap tarifs-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Consultation</th>
-              <th>Tarif</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="t-name">1ère consultation</div>
-                <div class="t-desc">Bilan complet · environ 60 min</div>
-              </td>
-              <td class="t-price">60 €</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="t-name">Suivi</div>
-                <div class="t-desc">Consultation de suivi · environ 30 min</div>
-              </td>
-              <td class="t-price">45 €</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="t-name">Forfait 3 séances</div>
-                <div class="t-desc">Bilan + 2 suivis inclus</div>
-              </td>
-              <td class="t-price">135 €</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="t-name">Suivi étudiants et −18 ans</div>
-              </td>
-              <td class="t-price">40 €</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="t-note">* Règlement accepté uniquement par chèque ou espèces.</p>
-        <div class="t-warn">Toute consultation non honorée sans prévenir ou annulée du jour au lendemain sera facturée : 50 € pour un bilan · 40 € pour un suivi.</div>
+        <div class="tarifs-table reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>Consultation</th>
+                <th>Tarif</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="t-name">1ère consultation</div>
+                  <div class="t-desc">Bilan complet · environ 60 min</div>
+                </td>
+                <td class="t-price">60 €</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="t-name">Suivi</div>
+                  <div class="t-desc">Consultation de suivi · environ 30 min</div>
+                </td>
+                <td class="t-price">45 €</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="t-name">Forfait 3 séances</div>
+                  <div class="t-desc">Bilan + 2 suivis inclus</div>
+                </td>
+                <td class="t-price">135 €</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="t-name">Suivi étudiants et moins de 18 ans</div>
+                </td>
+                <td class="t-price">40 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="t-note">* Règlement accepté uniquement par chèque ou espèces.</p>
+          <div class="t-warn">Toute consultation non honorée ou annulée moins de 24 h à l'avance sera facturée : 50 € pour un bilan · 40 € pour un suivi.</div>
+        </div>
       </div>
     </section>
 
     <section id="parcours" class="section parcours">
       <div class="wrap">
-        <span class="section-label">Mon parcours</span>
+        <span class="section-label reveal">Mon parcours</span>
         <div class="parcours-inner">
-          <div>
-            <h2>Une approche scientifique<br>au service de l'humain.</h2>
+          <div class="reveal">
+            <h2>Une approche scientifique <br>au service de l'humain.</h2>
+            <img src="images/pousse_plante_hd_transparent.png" class="parcours-mobile-visual" alt="" aria-hidden="true" loading="lazy" decoding="async">
             <div class="timeline">
               <article class="tl-item">
                 <div class="tl-dot"></div>
                 <div>
-                  <span class="tl-lbl">Formation initiale</span>
-                  <p class="tl-txt">Licence de Biologie, spécialité Physiologie et Biologie Cellulaire — une base scientifique pour comprendre les mécanismes du corps humain et développer une approche rigoureuse de la santé.</p>
+                  <span class="tl-lbl">Formation scientifique</span>
+                  <p class="tl-txt">Licence de Biologie, spécialité Physiologie et Biologie Cellulaire, obtenue à la Faculté Paul Sabatier de Toulouse. Cette formation constitue une base scientifique pour comprendre les mécanismes du corps humain et développer une approche rigoureuse de la santé.<span class="desktop-detail"> Elle m'a également appris à analyser les données scientifiques avec recul afin de proposer des conseils fiables et adaptés.</span></p>
+                </div>
+              </article>
+              <article class="tl-item">
+                <div class="tl-dot"></div>
+                <div>
+                  <span class="tl-lbl">Diplôme de diététique</span>
+                  <p class="tl-txt">BTS Diététique obtenu au CPES Toulouse. Cette formation professionnalisante permet de construire un accompagnement nutritionnel adapté à chaque personne.<span class="desktop-detail"> Elle m'a formée à l'évaluation des besoins, à l'éducation nutritionnelle et à la conception de prises en charge concrètes.</span></p>
                 </div>
               </article>
               <article class="tl-item">
                 <div class="tl-dot"></div>
                 <div>
                   <span class="tl-lbl">Spécialisation</span>
-                  <p class="tl-txt">Bachelor Chargé de Nutrition spécialisé dans les TCA et l'alimentation du sportif — pour enrichir les connaissances avec une approche approfondie des enjeux nutritionnels et comportementaux.</p>
+                  <p class="tl-txt">Bachelor Chargé de Nutrition spécialisé dans les TCA et l'alimentation du sportif. Cette formation enrichit mes connaissances grâce à une approche approfondie des enjeux nutritionnels et comportementaux.<span class="desktop-detail"> Cette spécialisation permet de mieux prendre en compte la relation à l'alimentation, le rythme de vie et les objectifs propres à chacun.</span></p>
                 </div>
               </article>
               <article class="tl-item">
                 <div class="tl-dot"></div>
                 <div>
                   <span class="tl-lbl">Expérience clinique</span>
-                  <p class="tl-txt">Des expériences en milieu thérapeutique qui ont permis de développer une approche centrée sur l'écoute et l'accompagnement personnalisé de chaque patient.</p>
+                  <p class="tl-txt">Des expériences en milieu thérapeutique à la Clinique de Blagnac et à la Clinique de Castelviel, ainsi qu'un stage à la Ligue contre le cancer, m'ont permis de développer une approche centrée sur l'écoute et l'accompagnement personnalisé de chaque patient.<span class="desktop-detail"> Elles ont renforcé ma capacité à m'adapter à des situations de santé et à des parcours de vie très différents.</span></p>
                 </div>
               </article>
             </div>
           </div>
 
-          <div>
-            <img src="images/pousse_plante.png" class="illustration" alt="Illustration parcours">
+          <div class="reveal">
+            <img src="images/pousse_plante.png" class="illustration" alt="Illustration des étapes de croissance d'une plante" loading="lazy" decoding="async">
 
             <div class="aside-box">
               <p>Je suis convaincue qu'une alimentation adaptée doit avant tout être <strong>personnalisée, réaliste et en accord</strong> avec les besoins, les objectifs et le quotidien de chacun.</p>
@@ -240,12 +269,12 @@
     </section>
 
     <section id="contact" class="section contact">
-      <img src="images/branche_olivier2.png" class="contact-deco deco-top-right" alt="" aria-hidden="true">
-      <img src="images/branche_olivier.png" class="contact-deco deco-bottom-left" alt="" aria-hidden="true">
+      <img src="images/branche_olivier2.png" class="contact-deco deco-top-right" alt="" aria-hidden="true" loading="lazy" decoding="async">
+      <img src="images/branche_olivier.png" class="contact-deco deco-bottom-left" alt="" aria-hidden="true" loading="lazy" decoding="async">
       <div class="wrap contact-grid">
-        <div>
+        <div class="reveal">
           <span class="section-label">Me contacter</span>
-          <h2>Cabinet de Saint-Jean (31420)</h2>
+          <h2>Cabinet de Saint-Jean (31240)</h2>
 
           <div class="c-row">
             <div class="c-ic" aria-hidden="true">
@@ -253,7 +282,8 @@
             </div>
             <div>
               <span class="c-lbl">Adresse</span>
-              <span class="c-val">9 Av. de Lapeyrière, 31420 Saint Jean</span>
+              <span class="c-val">9 Av. de Lapeyrière, 31240 Saint-Jean</span>
+              <p class="accessibility-note">Cabinet en RDC, accessible aux personnes en situation de handicap.</p>
               <ul class="access-list">
                 <li>Parking sur place</li>
                 <li>Bus 76 arrêt Harkis (correspondance ligne A, station Argoulet)</li>
@@ -283,14 +313,18 @@
           </div>
         </div>
 
-        <aside class="rdv-box">
+        <aside class="rdv-box reveal">
           <h3>Prendre rendez-vous</h3>
-          <p>Par téléphone ou via le formulaire ci-dessous — je vous réponds dans les meilleurs délais.</p>
+          <p>Par téléphone ou via le formulaire ci-dessous. Je vous réponds dans les meilleurs délais.</p>
           <a href="tel:0743765040" class="big-tel">07 43 76 50 40</a>
           <span class="tel-note">Appel direct au cabinet</span>
           <div class="or-divider"><span></span><span class="pill">ou par écrit</span><span></span></div>
 
-          <form id="contact-form">
+          <form id="contact-form" action="https://formsubmit.co/juliet.diet@yahoo.com" method="POST">
+            <input type="hidden" name="_subject" value="Nouvelle demande de rendez-vous | Site Juliet Clavel">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="field">
               <label for="nom">Nom complet</label>
               <input type="text" id="nom" name="nom" required placeholder="Votre nom">
@@ -314,6 +348,7 @@
             </div>
             <button type="submit" class="btn btn-primary btn-full">Envoyer la demande</button>
             <p class="form-ok" id="form-ok">Votre message a bien été reçu. Je vous réponds rapidement.</p>
+            <p class="form-error" id="form-error">L'envoi n'a pas fonctionné. Vous pouvez réessayer ou appeler directement le cabinet.</p>
           </form>
         </aside>
       </div>
@@ -321,7 +356,6 @@
   </main>
 
   <footer>
-    <img src="images/framboises.png" class="footer-deco" alt="" aria-hidden="true">
     <div class="wrap footer-inner">
       <span class="ft-name">Juliet Clavel</span>
       <div class="ft-links">
@@ -333,11 +367,17 @@
       </div>
     </div>
     <div class="wrap footer-bottom">
-      <span>© 2026 Juliet Clavel — Diététicienne-Nutritionniste · 9 Av. de Lapeyrière, 31420 Saint Jean</span>
+      <span>© 2026 Juliet Clavel · Diététicienne-Nutritionniste · 9 Av. de Lapeyrière, 31240 Saint-Jean</span>
       <a href="#mentions">Mentions légales</a>
+    </div>
+    <div class="wrap footer-credit">
+      <span>Site conçu et réalisé par</span>
+      <a href="https://www.linkedin.com/in/lisa-cauquil-70285922a" target="_blank" rel="noopener noreferrer">Lisa Cauquil</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:lisacauquil@gmail.com">lisacauquil@gmail.com</a>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
