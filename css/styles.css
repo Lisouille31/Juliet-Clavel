@@ -1150,11 +1150,40 @@ footer {
 
   .hero {
     min-height: auto;
-    padding: 48px 0 40px;
+    padding: 46px 0 36px;
+  }
+
+  .hero-background {
+    opacity: 1;
   }
 
   .hero-background img {
-    display: none;
+    display: block;
+    max-width: 110px;
+    opacity: 0.92;
+    filter: saturate(1.05);
+  }
+
+  .hero-img-top-right {
+    top: 8px;
+    left: 8px;
+    max-width: 100px;
+  }
+
+  .hero-img-bottom-left {
+    bottom: -12px;
+    right: 8px;
+    left: auto;
+    max-width: 110px;
+  }
+
+  .hero-content {
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(155,127,199,0.16);
+    border-radius: 24px;
+    padding: 24px 18px;
+    box-shadow: 0 18px 38px rgba(60,50,40,0.12);
   }
 
   .hero-title {
@@ -1183,11 +1212,18 @@ footer {
 
   .pourquoi-grid {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
   }
 
   .pq-card {
     padding: 20px 16px;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(60,50,40,0.08);
+    border: 1px solid rgba(155,127,199,0.14);
   }
 
   .vision-inner {
@@ -1209,10 +1245,14 @@ footer {
     max-width: 100%;
     display: flex;
     justify-content: center;
+    padding: 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 24px;
+    box-shadow: 0 14px 30px rgba(60,50,40,0.08);
   }
 
   .illustration-large {
-    max-width: 280px;
+    max-width: 260px;
     margin: 0 auto;
   }
 
@@ -1229,14 +1269,27 @@ footer {
     align-items: flex-start;
     gap: 16px;
     margin-bottom: 0;
+    padding: 18px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 22px;
+    box-shadow: 0 12px 26px rgba(60,50,40,0.07);
   }
 
-  .tarifs-deco,
-  .illustration-small,
-  .pourquoi-deco,
-  .contact-deco,
-  .footer-deco {
-    display: none;
+  .tarifs-deco {
+    position: static;
+    display: block;
+    width: 78px;
+    max-width: 78px;
+    margin: 0 0 8px;
+    transform: none;
+    opacity: 0.95;
+  }
+
+  .illustration-small {
+    display: block;
+    width: 140px;
+    max-width: 140px;
+    margin: 4px 0 0 auto;
   }
 
   table,
@@ -1280,14 +1333,29 @@ footer {
     gap: 28px;
   }
 
+  .illustration {
+    display: block;
+    padding: 12px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(60,50,40,0.08);
+  }
+
   .aside-box {
     padding: 20px 16px;
     text-align: left;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(60,50,40,0.06);
   }
 
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .rdv-box {
+    border-radius: 20px;
+    box-shadow: 0 14px 30px rgba(60,50,40,0.08);
   }
 
   .c-row {
@@ -1313,6 +1381,26 @@ footer {
     font-size: 1.8rem;
   }
 
+  .contact-deco {
+    display: block;
+    position: absolute;
+    opacity: 0.7;
+    max-width: 90px;
+    z-index: 0;
+  }
+
+  .contact-deco.deco-top-right {
+    top: -10px;
+    right: -4px;
+    transform: rotate(-16deg);
+  }
+
+  .contact-deco.deco-bottom-left {
+    bottom: -18px;
+    left: -8px;
+    transform: rotate(10deg);
+  }
+
   footer {
     padding-top: 28px;
   }
@@ -1320,6 +1408,14 @@ footer {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-deco {
+    display: block;
+    position: static;
+    max-width: 100px;
+    margin: 10px 0 0 auto;
+    opacity: 0.95;
   }
 }
 
