@@ -1153,15 +1153,10 @@ footer {
     padding: 46px 0 36px;
   }
 
-  .hero-background {
-    opacity: 1;
-  }
-
   .hero-background img {
     display: block;
     max-width: 110px;
-    opacity: 0.92;
-    filter: saturate(1.05);
+    opacity: 1;
   }
 
   .hero-img-top-right {
@@ -1175,15 +1170,6 @@ footer {
     right: 8px;
     left: auto;
     max-width: 110px;
-  }
-
-  .hero-content {
-    background: rgba(255,255,255,0.72);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(155,127,199,0.16);
-    border-radius: 24px;
-    padding: 24px 18px;
-    box-shadow: 0 18px 38px rgba(60,50,40,0.12);
   }
 
   .hero-title {
@@ -1245,10 +1231,6 @@ footer {
     max-width: 100%;
     display: flex;
     justify-content: center;
-    padding: 16px;
-    background: rgba(255,255,255,0.6);
-    border-radius: 24px;
-    box-shadow: 0 14px 30px rgba(60,50,40,0.08);
   }
 
   .illustration-large {
@@ -1269,10 +1251,6 @@ footer {
     align-items: flex-start;
     gap: 16px;
     margin-bottom: 0;
-    padding: 18px;
-    background: rgba(255,255,255,0.6);
-    border-radius: 22px;
-    box-shadow: 0 12px 26px rgba(60,50,40,0.07);
   }
 
   .tarifs-deco {
@@ -1333,29 +1311,14 @@ footer {
     gap: 28px;
   }
 
-  .illustration {
-    display: block;
-    padding: 12px;
-    background: rgba(255,255,255,0.7);
-    border-radius: 20px;
-    box-shadow: 0 12px 24px rgba(60,50,40,0.08);
-  }
-
   .aside-box {
     padding: 20px 16px;
     text-align: left;
-    border-radius: 18px;
-    box-shadow: 0 10px 20px rgba(60,50,40,0.06);
   }
 
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .rdv-box {
-    border-radius: 20px;
-    box-shadow: 0 14px 30px rgba(60,50,40,0.08);
   }
 
   .c-row {
