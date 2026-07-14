@@ -120,11 +120,6 @@
       var submitButton = form.querySelector("button[type='submit']");
       var initialButtonText = submitButton.textContent;
       var formData = new FormData(form);
-      var payload = {};
-
-      formData.forEach(function (value, key) {
-        payload[key] = value;
-      });
 
       formOk.style.display = 'none';
       formError.style.display = 'none';
@@ -132,28 +127,25 @@
       submitButton.textContent = 'Envoi en cours…';
 
       try {
-        var response = await fetch('https://formsubmit.co/ajax/juliet.diet@yahoo.com', {
+        var response = await fetch('/', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded'
           },
-          body: JSON.stringify(payload)
+          body: new URLSearchParams(formData).toString()
         });
 
         if (!response.ok) {
-          throw new Error('Échec de la demande');
-        }
-
-        var result = await response.json();
-        if (result.success === false) {
-          throw new Error('Envoi refusé');
+          throw new Error('Envoi refusé par Netlify Forms');
         }
 
         form.reset();
         formOk.style.display = 'block';
         formOk.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
       } catch (error) {
+        console.error('Échec du formulaire de contact :', error);
+        formError.textContent =
+          "L'envoi n'a pas fonctionné. Vous pouvez réessayer ou appeler directement le cabinet.";
         formError.style.display = 'block';
         formError.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
       } finally {

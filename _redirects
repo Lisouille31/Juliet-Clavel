@@ -1,2 +1,5 @@
-/qr   /   302!
-/qr/* /   302!
+# URL permanente encodee dans le QR :
+# https://juliet-clavel-dieteticienne.netlify.app/qr
+# Pour changer la destination, modifier seulement l'URL ci-dessous.
+/qr   https://juliet-clavel-dieteticienne.netlify.app/   302!
+/qr/* https://juliet-clavel-dieteticienne.netlify.app/   302!
