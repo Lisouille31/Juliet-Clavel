@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juliet-clavel-dieteticienne.netlify.app/sitemap.xml
