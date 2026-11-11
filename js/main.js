@@ -122,6 +122,7 @@
     var hovering = false;
     var touching = false;
     var lastFrame = 0;
+    var galleryPosition = gallery.scrollLeft;
     gallery.addEventListener('mouseenter', function () { hovering = true; });
     gallery.addEventListener('mouseleave', function () { hovering = false; });
     gallery.addEventListener('touchstart', function () { touching = true; }, { passive: true });
@@ -132,8 +133,12 @@
       lastFrame = time;
       if (!reduceMotion && !hovering && !touching && !gallery.contains(document.activeElement) && !document.hidden) {
         var loopWidth = gallery.children[originals.length].offsetLeft - gallery.children[0].offsetLeft;
-        gallery.scrollLeft += elapsed * 0.025;
-        if (loopWidth > 0 && gallery.scrollLeft >= loopWidth) gallery.scrollLeft -= loopWidth;
+        // Keep fractional pixels between frames, even when the browser rounds scrollLeft.
+        galleryPosition += elapsed * 0.035;
+        if (loopWidth > 0) galleryPosition %= loopWidth;
+        gallery.scrollLeft = galleryPosition;
+      } else {
+        galleryPosition = gallery.scrollLeft;
       }
       window.requestAnimationFrame(animateGallery);
     };
