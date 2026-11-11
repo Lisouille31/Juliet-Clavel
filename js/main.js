@@ -111,8 +111,7 @@
 
   /* ---------- Galerie de photos défilante ---------- */
   var gallery = document.getElementById('cabinet-gallery');
-  var galleryPause = document.querySelector('.gallery-pause');
-  if (gallery && galleryPause) {
+  if (gallery) {
     var originals = Array.from(gallery.children);
     originals.forEach(function (photo) {
       var copy = photo.cloneNode(true);
@@ -120,16 +119,9 @@
       copy.setAttribute('inert', '');
       gallery.appendChild(copy);
     });
-    var paused = reduceMotion;
     var hovering = false;
     var touching = false;
     var lastFrame = 0;
-    var updatePause = function () {
-      galleryPause.setAttribute('aria-pressed', String(paused));
-      galleryPause.textContent = paused ? 'Faire défiler les photos' : 'Mettre les photos en pause';
-    };
-    updatePause();
-    galleryPause.addEventListener('click', function () { paused = !paused; updatePause(); });
     gallery.addEventListener('mouseenter', function () { hovering = true; });
     gallery.addEventListener('mouseleave', function () { hovering = false; });
     gallery.addEventListener('touchstart', function () { touching = true; }, { passive: true });
@@ -138,7 +130,7 @@
     var animateGallery = function (time) {
       var elapsed = lastFrame ? Math.min(time - lastFrame, 50) : 0;
       lastFrame = time;
-      if (!paused && !hovering && !touching && !gallery.contains(document.activeElement) && !document.hidden) {
+      if (!reduceMotion && !hovering && !touching && !gallery.contains(document.activeElement) && !document.hidden) {
         var loopWidth = gallery.children[originals.length].offsetLeft - gallery.children[0].offsetLeft;
         gallery.scrollLeft += elapsed * 0.025;
         if (loopWidth > 0 && gallery.scrollLeft >= loopWidth) gallery.scrollLeft -= loopWidth;

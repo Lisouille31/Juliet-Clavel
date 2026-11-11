@@ -2506,7 +2506,6 @@ footer {
 .content-pending { max-width: 720px; margin: 0 auto; padding: 30px; border: 1px dashed var(--mauve-l); border-radius: 18px; color: var(--ink-s); text-align: center; }
 .cabinet-gallery { display: flex; gap: 16px; max-width: 860px; margin: 0 auto; overflow-x: auto; scrollbar-width: none; }
 .cabinet-gallery::-webkit-scrollbar { display: none; }
-.gallery-pause { display: block; margin: 18px auto 0; color: var(--mauve-d); border: 1px solid var(--line); }
 .cabinet-gallery figure { position: relative; flex: 0 0 calc((100% - 32px) / 3); min-width: 0; height: 230px; margin: 0; overflow: hidden; border-radius: 16px; background: var(--cream2); }
 .cabinet-gallery a { display: block; height: 100%; }
 .cabinet-gallery:focus-visible, .cabinet-gallery a:focus-visible { outline: 3px solid var(--mauve); outline-offset: -4px; }
