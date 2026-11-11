@@ -2504,8 +2504,10 @@ footer {
 .google-reviews { background: var(--lavender-page); text-align: center; }
 .cabinet-photos .section-intro, .google-reviews .section-intro { max-width: 720px; margin: 0 auto 32px; text-align: center; }
 .content-pending { max-width: 720px; margin: 0 auto; padding: 30px; border: 1px dashed var(--mauve-l); border-radius: 18px; color: var(--ink-s); text-align: center; }
-.cabinet-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 860px; margin: 0 auto; }
-.cabinet-gallery figure { position: relative; min-width: 0; height: 230px; margin: 0; overflow: hidden; border-radius: 16px; background: var(--cream2); }
+.cabinet-gallery { display: flex; gap: 16px; max-width: 860px; margin: 0 auto; overflow-x: auto; scrollbar-width: none; }
+.cabinet-gallery::-webkit-scrollbar { display: none; }
+.gallery-pause { display: block; margin: 18px auto 0; color: var(--mauve-d); border: 1px solid var(--line); }
+.cabinet-gallery figure { position: relative; flex: 0 0 calc((100% - 32px) / 3); min-width: 0; height: 230px; margin: 0; overflow: hidden; border-radius: 16px; background: var(--cream2); }
 .cabinet-gallery a { display: block; height: 100%; }
 .cabinet-gallery:focus-visible, .cabinet-gallery a:focus-visible { outline: 3px solid var(--mauve); outline-offset: -4px; }
 .cabinet-gallery img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -2527,7 +2529,7 @@ footer {
 }
 @media (max-width: 640px) {
   .cabinet-gallery { gap: 8px; }
-  .cabinet-gallery figure { height: auto; aspect-ratio: 3 / 4; border-radius: 10px; }
+  .cabinet-gallery figure { flex-basis: 75%; height: 280px; border-radius: 10px; }
 
   .content-pending { padding: 24px 18px; }
   .nav-toggle { display: flex; position: static; transform: none; flex: 0 0 36px; }
