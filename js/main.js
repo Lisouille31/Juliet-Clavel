@@ -109,49 +109,4 @@
     );
   }
 
-  /* ---------- Formulaire de contact ---------- */
-  var form = document.getElementById('contact-form');
-  var formOk = document.getElementById('form-ok');
-  var formError = document.getElementById('form-error');
-  if (form && formOk && formError) {
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      var submitButton = form.querySelector("button[type='submit']");
-      var initialButtonText = submitButton.textContent;
-      var formData = new FormData(form);
-
-      formOk.style.display = 'none';
-      formError.style.display = 'none';
-      submitButton.disabled = true;
-      submitButton.textContent = 'Envoi en cours…';
-
-      try {
-        var response = await fetch('/', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: new URLSearchParams(formData).toString()
-        });
-
-        if (!response.ok) {
-          throw new Error('Envoi refusé par Netlify Forms');
-        }
-
-        form.reset();
-        formOk.style.display = 'block';
-        formOk.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
-      } catch (error) {
-        console.error('Échec du formulaire de contact :', error);
-        formError.textContent =
-          "L'envoi n'a pas fonctionné. Vous pouvez réessayer ou appeler directement le cabinet.";
-        formError.style.display = 'block';
-        formError.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
-      } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = initialButtonText;
-      }
-    });
-  }
 })();

@@ -28,6 +28,18 @@
     "image": "https://juliet-clavel-dieteticienne.netlify.app/images/logo.png",
     "description": "Cabinet de diététique et nutrition à Saint-Jean (31). Accompagnement personnalisé pour retrouver un équilibre alimentaire et des habitudes durables.",
     "telephone": "07 43 76 50 40",
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "SIRET",
+        "value": "13072733200012"
+      },
+      {
+        "@type": "PropertyValue",
+        "propertyID": "RPPS",
+        "value": "10112764070"
+      }
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9 Avenue de Lapeyrière",
@@ -55,6 +67,8 @@
         <li><a href="#pourquoi">Pourquoi consulter</a></li>
         <li><a href="#tarifs">Tarifs</a></li>
         <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#avis">Avis</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -78,7 +92,7 @@
         <div class="hero-sub">Diététicienne · Nutritionniste à Saint-Jean (31)</div>
         <p class="hero-tagline">« Chaque parcours est unique, chaque alimentation aussi. »</p>
         <a href="#contact" class="btn btn-primary btn-large">Prendre rendez-vous</a>
-        <p class="hero-tel">Par téléphone au <a href="tel:07 43 76 50 40">07 43 76 50 40</a> ou via le formulaire</p>
+        <p class="hero-tel">Par téléphone au <a href="tel:0743765040">07 43 76 50 40</a> ou en réservant en ligne sur Alivio</p>
       </div>
 
     </section>
@@ -246,13 +260,6 @@
               <article class="tl-item">
                 <div class="tl-dot"></div>
                 <div>
-                  <span class="tl-lbl">Spécialisation</span>
-                  <p class="tl-txt">Bachelor Chargé de Nutrition spécialisé dans les TCA et l'alimentation du sportif. Cette formation enrichit mes connaissances grâce à une approche approfondie des enjeux nutritionnels et comportementaux.<span class="desktop-detail"> Cette spécialisation permet de mieux prendre en compte la relation à l'alimentation, le rythme de vie et les objectifs propres à chacun.</span></p>
-                </div>
-              </article>
-              <article class="tl-item">
-                <div class="tl-dot"></div>
-                <div>
                   <span class="tl-lbl">Expérience clinique</span>
                   <p class="tl-txt">Des expériences en milieu thérapeutique à la Clinique de Blagnac et à la Clinique de Castelviel, ainsi qu'un stage à la Ligue contre le cancer, m'ont permis de développer une approche centrée sur l'écoute et l'accompagnement personnalisé de chaque patient.<span class="desktop-detail"> Elles ont renforcé ma capacité à m'adapter à des situations de santé et à des parcours de vie très différents.</span></p>
                 </div>
@@ -269,6 +276,50 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="photos" class="section cabinet-photos" aria-labelledby="photos-title">
+      <div class="wrap">
+        <div class="section-intro reveal">
+          <span class="section-label">Photos du cabinet</span>
+          <h2 id="photos-title">Découvrez le lieu de nos rencontres.</h2>
+          <p>Au 9 avenue de Lapeyrière à Saint-Jean, un espace pour prendre le temps d'échanger autour de votre alimentation.</p>
+        </div>
+        <div class="cabinet-gallery" id="cabinet-gallery" role="region" aria-label="Photos du cabinet">
+          <figure>
+            <a href="images/cabinet/bureau-portrait.jpg" target="_blank" rel="noopener noreferrer" aria-label="Voir la photo du bureau en grand (nouvel onglet)">
+              <img src="images/cabinet/bureau-portrait.jpg" alt="Bureau en bois et fauteuils colorés face à la fenêtre du cabinet" width="1200" height="1600" loading="lazy" decoding="async">
+            </a>
+
+          </figure>
+          <figure>
+            <a href="images/cabinet/vue-ensemble.jpg" target="_blank" rel="noopener noreferrer" aria-label="Voir la vue d'ensemble du cabinet en grand (nouvel onglet)">
+              <img src="images/cabinet/vue-ensemble.jpg" alt="Vue d'ensemble du cabinet avec le bureau, les rangements et les luminaires en rotin" width="1600" height="1200" loading="lazy" decoding="async">
+            </a>
+
+          </figure>
+          <figure>
+            <a href="images/cabinet/espace-consultation.jpg" target="_blank" rel="noopener noreferrer" aria-label="Voir l'espace de consultation en grand (nouvel onglet)">
+              <img src="images/cabinet/espace-consultation.jpg" alt="Deux fauteuils devant le bureau de consultation, éclairés par des lampes en rotin" width="1600" height="1200" loading="lazy" decoding="async">
+            </a>
+
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="avis" class="section google-reviews" aria-labelledby="avis-title">
+      <div class="wrap">
+        <div class="section-intro reveal">
+          <span class="section-label">Avis Google</span>
+          <h2 id="avis-title">Vos retours sur mon accompagnement</h2>
+          <p>Découvrez les expériences partagées sur Google.</p>
+        </div>
+        <div class="google-reviews-widget" aria-label="Avis Google du cabinet">
+          <div class="elfsight-app-6044754d-ee5a-40f8-83db-2103dce02ca4" data-elfsight-app-lazy></div>
+        </div>
+        <a class="btn btn-primary" id="google-reviews-link" href="https://maps.app.goo.gl/R6dttnzXchQxLoMv5" target="_blank" rel="noopener noreferrer">Voir tous les avis sur Google</a>
       </div>
     </section>
 
@@ -315,43 +366,15 @@
               <span class="c-val"><a href="mailto:juliet.diet@yahoo.com">juliet.diet@yahoo.com</a></span>
             </div>
           </div>
+
         </div>
 
         <aside class="rdv-box reveal">
           <h3>Prendre rendez-vous</h3>
-          <p>Par téléphone ou via le formulaire ci-dessous. Je vous réponds dans les meilleurs délais.</p>
+          <p>Choisissez directement votre créneau en ligne sur Alivio, ou contactez-moi par téléphone.</p>
           <a href="tel:0743765040" class="big-tel">07 43 76 50 40</a>
           <span class="tel-note">Appel direct au cabinet</span>
-          <div class="or-divider"><span></span><span class="pill">ou par écrit</span><span></span></div>
-
-          <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
-            <input type="text" name="bot-field" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <div class="field">
-              <label for="nom">Nom complet</label>
-              <input type="text" id="nom" name="nom" required placeholder="Votre nom">
-            </div>
-            <div class="field">
-              <label for="tel2">Téléphone</label>
-              <input type="tel" id="tel2" name="tel" placeholder="06 00 00 00 00" pattern="[0-9]{10}" required>
-            </div>
-            <div class="field">
-              <label for="motif">Motif</label>
-              <select id="motif" name="motif">
-                <option>1ère consultation</option>
-                <option>Suivi</option>
-                <option>Suivi étudiants / -18 ans</option>
-                <option>Renseignement</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="msg">Message (facultatif)</label>
-              <textarea id="msg" name="message" placeholder="Quelques mots sur votre situation…"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Envoyer la demande</button>
-            <p class="form-ok" id="form-ok">Votre message a bien été reçu. Je vous réponds rapidement.</p>
-            <p class="form-error" id="form-error">L'envoi n'a pas fonctionné. Vous pouvez réessayer ou appeler directement le cabinet.</p>
-          </form>
+          <a href="https://diet.alivio.fr/dieteticien/juliet-clavel" class="btn btn-primary btn-full booking-link" target="_blank" rel="noopener noreferrer"><span>Réserver en ligne</span><img class="booking-logo" src="images/alivio-logo.svg" alt="Alivio" width="46" height="25"></a>
         </aside>
       </div>
     </section>
@@ -365,12 +388,20 @@
         <a href="#pourquoi">Pourquoi consulter</a>
         <a href="#tarifs">Tarifs</a>
         <a href="#parcours">Parcours</a>
+        <a href="#photos">Photos</a>
+        <a href="#avis">Avis</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
     <div class="wrap footer-bottom">
       <span>© 2026 Juliet Clavel · Diététicienne-Nutritionniste · 9 Av. de Lapeyrière, 31240 Saint-Jean</span>
-      <a href="#mentions">Mentions légales</a>
+      <div class="footer-legal" id="mentions">
+        <span class="footer-legal-title">Mentions légales</span>
+        <div class="footer-identifiers">
+          <span>Siret : 13072733200012</span>
+          <span>Numéro RPPS : 10112764070</span>
+        </div>
+      </div>
     </div>
     <div class="wrap footer-credit">
       <span>Site conçu et réalisé par</span>
@@ -380,6 +411,7 @@
     </div>
   </footer>
 
+  <script src="https://elfsightcdn.com/platform.js" async></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

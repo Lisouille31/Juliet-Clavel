@@ -1,0 +1,6 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' https://elfsightcdn.com https://*.elfsightcdn.com https://*.elfsight.com 'sha256-5kGirkpGXg3Fy2U5Ys+qyRIsV2CJ6kKDFWfcT8K3SfU=' 'sha256-Wu9F2d0fsKH6WLK6hLUkywOQEilO4eudl0mrb0Pya80='; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://*.elfsightcdn.com https://*.elfsight.com https://*.googleusercontent.com https://*.gstatic.com; connect-src 'self' https://*.elfsight.com https://*.elfsightcdn.com https://fonts.googleapis.com https://fonts.gstatic.com; frame-src https://*.elfsight.com https://*.elfsightcdn.com; upgrade-insecure-requests
