@@ -2500,7 +2500,7 @@ footer {
 
 /* Parcours sur trois étapes, galerie et témoignages. */
 [hidden] { display: none !important; }
-.cabinet-photos { background: var(--cream); }
+.cabinet-photos { background: var(--cream); --wave-from: var(--lavender-page); }
 .google-reviews { background: var(--lavender-page); text-align: center; }
 .cabinet-photos .section-intro, .google-reviews .section-intro { max-width: 720px; margin: 0 auto 32px; text-align: center; }
 .content-pending { max-width: 720px; margin: 0 auto; padding: 30px; border: 1px dashed var(--mauve-l); border-radius: 18px; color: var(--ink-s); text-align: center; }
